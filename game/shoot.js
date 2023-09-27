@@ -1,5 +1,6 @@
 var bulletTime1 = 0;
 var isInvincible = false;
+var direction = 1;
 
 var bullet_player1_material = new THREE.MeshLambertMaterial(
 {
@@ -89,6 +90,16 @@ function hit_enemy(){
             }, 3000);
         }
     }
+}
+
+function move_enemy() {
+    if (Math.abs(enemy.position.y) >= WIDTH / 2 ||
+    Math.abs(enemy.position.y) >= HEIGHT / 2) 
+    {
+        direction *= -1;
+    }
+    enemy.position.y = enemy.position.y + 1 * direction;
+    enemy.graphic.position.y = enemy.position.y;
 }
 
 function player_collision()
