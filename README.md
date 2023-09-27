@@ -30,4 +30,5 @@ A video game with three.js
 - [X] : As a player, I want to destroy ennemy when I shot them
 - [X] : As a ennemy, I want to move on one axe
 - [X] : As a player, I want to decrease my life when I am touch by an ennemy
-- [X] : As a player, I want to decrease my life when I fall 
+- [X] : As a player, I want to decrease my life when I fall
+- [X] : AS A PLAYER, WHEN I FALL OR GET HIT I GET INVINCIBLE FOR 3 SECONDS (SO IF I'M FALLING I CAN TRY TO GET BACK ON A TILE)
